@@ -195,10 +195,14 @@ a img{
     color: #f0ff95;
     font-weight: 500;
 }
+.button-box{
+    height: 50px;
+    font-size: 20px;
+}
 
 .android-slogan {
   font-size: 60px;
-  padding-top: 160px;
+  padding-top: 320px;
     text-shadow: 0 0 25px #474b4d,0 0 20px #636769,0 0 0.40px #321935;
 
 }
@@ -212,7 +216,7 @@ a img{
 
 .android-create-character {
   font-size: 21px;
-  padding-top: 75px;
+  padding-top: 100px;
     text-shadow: 0 0 25px #474b4d,0 0 20px #636769,0 0 0.40px #321935;
 
 }
