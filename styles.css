@@ -96,7 +96,7 @@ a img{
     font-size: 14px;
   }
 
-  .android-navigation-container {
+  .navigation-container {
     /* Simple hack to make the overflow happen to the left instead... */
     direction: rtl;
     -webkit-order: 1;
@@ -107,7 +107,7 @@ a img{
         width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .android-navigation {
+  .navigation {
     /* ... and now make sure the content is actually LTR */
     direction: ltr;
     -webkit-justify-content: flex-end;
@@ -116,13 +116,13 @@ a img{
     width: 800px;
   }
 
-  .android-search-box.is-focused + .android-navigation-container {
+  .android-search-box.is-focused + .navigation-container {
     opacity: 0;
     width: 100px;
   }
 
 
-  .android-navigation .mdl-navigation__link {
+  .navigation .mdl-navigation__link {
     display: inline-block;
     height: 60px;
     line-height: 68px;
@@ -130,7 +130,7 @@ a img{
     border-bottom: 4px solid transparent;
   }
 
-    .android-navigation .mdl-navigation__link:hover {
+    .navigation .mdl-navigation__link:hover {
       border-bottom: 4px solid #8bc34a;
     }
 
@@ -179,15 +179,6 @@ a img{
       bottom: 16px;
     }
 
-.android-be-together-section {
-  position: relative;
-  height: 800px;
-  width: auto;
-  background-color: #f3f3f3;
-  background: url('images/slide01.jpg') center 30% no-repeat;
-  background-size: cover;
-}
-
 .logo-font {
     font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 
@@ -195,36 +186,85 @@ a img{
     color: #f0ff95;
     font-weight: 500;
 }
+.top-section {
+    position: relative;
+    height: 800px;
+    width: auto;
+    background-color: #f3f3f3;
+    background: url('images/slide01.jpg') center 30% no-repeat;
+    background-size: cover;
+}
 .button-box{
     height: 50px;
     font-size: 20px;
 }
-
-.android-slogan {
+.top-slogan {
   font-size: 60px;
   padding-top: 320px;
     text-shadow: 0 0 25px #474b4d,0 0 20px #636769,0 0 0.40px #321935;
 
 }
-
-.android-sub-slogan {
+.top-sub-slogan {
   font-size: 21px;
   padding-top: 24px;
     text-shadow: 0 0 25px #474b4d,0 0 20px #636769,0 0 0.40px #321935;
 
 }
-
-.android-create-character {
+.top-entry-button {
   font-size: 21px;
   padding-top: 100px;
     text-shadow: 0 0 25px #474b4d,0 0 20px #636769,0 0 0.40px #321935;
 
 }
-.link-sns{
-    padding-top: 40px;
+.news-section{
+    position: relative;
+    height: 150px;
+    width: auto;
+    background-color: #f3f3f3;
+    background: url('images/slide02.jpg') center 30% no-repeat;
+    background-size: cover;
 }
-.link-sns-logo{
-    margin: 5px;
+.schedule-section{
+    position: relative;
+    height: 150px;
+    width: auto;
+    background-color: #f3f3f3;
+    background: url('images/slide03.jpg') center 30% no-repeat;
+    background-size: cover;
+}
+.entry-section{
+    position: relative;
+    height: 150px;
+    width: auto;
+    background-color: #f3f3f3;
+    background: url('images/slide04.jpg') center 30% no-repeat;
+    background-size: cover;
+}
+.license-section{
+    position: relative;
+    height: 150px;
+    width: auto;
+    background-color: #f3f3f3;
+    background: url('images/slide05.jpg') center 30% no-repeat;
+    background-size: cover;
+}
+.common-slogan{
+    font-size: 45px;
+    padding-top: 35px;
+    padding-left: 35px;
+    text-shadow: 0 0 25px #474b4d,0 0 20px #636769,0 0 0.40px #321935;
+}
+.common-sub-slogan {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 35px;
+    text-shadow: 0 0 25px #474b4d,0 0 20px #636769,0 0 0.40px #321935;
+}
+.common-single-slogan{
+    font-size: 45px;
+    padding-top: 45px;
+    padding-left: 35px;
+    text-shadow: 0 0 25px #474b4d,0 0 20px #636769,0 0 0.40px #321935;
 }
 
   .android-create-character a {
@@ -492,7 +532,7 @@ a img{
 
 /**** Mobile layout ****/
 @media (max-width: 900px) {
-  .android-navigation-container {
+  .navigation-container {
     display: none;
   }
 
@@ -512,7 +552,7 @@ a img{
      consecutive "+" operators in some cases. Therefore, we need to use both
      here to cover all the bases. */
   .android.android-search-box.is-focused ~ .android-mobile-title,
-  .android-search-box.is-focused + .android-navigation-container + .android-mobile-title {
+  .android-search-box.is-focused + .navigation-container + .android-mobile-title {
     opacity: 0;
   }
 
