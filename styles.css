@@ -186,22 +186,59 @@ a img{
     color: #f0ff95;
     font-weight: 500;
 }
+@media screen and (max-width: 640px){
+  .top-section{
+    background: url('images/slide01-mobile.jpg') center 30% no-repeat;
+  }
+  .news-section{
+    background: url('images/slide02-mobile.jpg') center 30% no-repeat;
+  }
+  .schedule-section{
+    background: url('images/slide03-mobile.jpg') center 30% no-repeat;
+  }
+  .entry-section{
+    background: url('images/slide04-mobile.jpg') center 30% no-repeat;
+  }
+  .license-section{
+    background: url('images/slide05-mobile.jpg') center 30% no-repeat;
+  }
+  .
+}
+@media screen and (min-width: 1024px){
+  .mdl-dialog{
+    width: 800px;
+  }
+}
+.section-init{
+  position: relative;
+  height: 150px;
+  width: auto;
+  background-color: #f3f3f3;
+  background-size: cover;
+}
 .top-section {
-    position: relative;
-    height: 800px;
-    width: auto;
-    background-color: #f3f3f3;
-    background: url('images/slide01.jpg') center 30% no-repeat;
-    background-size: cover;
+  background: url('images/slide01.jpg') center 20% no-repeat;
+}
+.news-section{
+  background: url('images/slide02.jpg') center 10% no-repeat;
+}
+.schedule-section{
+  background: url('images/slide03.jpg') center 20% no-repeat;
+}
+.entry-section{
+  background: url('images/slide04.jpg') center 35% no-repeat;
+}
+.license-section{
+  background: url('images/slide05.jpg') center 30% no-repeat;
 }
 .button-box{
-    height: 50px;
-    font-size: 20px;
+  height: 50px;
+  font-size: 20px;
 }
 .top-slogan {
   font-size: 60px;
-  padding-top: 320px;
-    text-shadow: 0 0 25px #474b4d,0 0 20px #636769,0 0 0.40px #321935;
+  padding-top: 200px;
+  text-shadow: 0 0 25px #474b4d,0 0 20px #636769,0 0 0.40px #321935;
 
 }
 .top-sub-slogan {
@@ -213,40 +250,9 @@ a img{
 .top-entry-button {
   font-size: 21px;
   padding-top: 100px;
+  padding-bottom: 200px;
     text-shadow: 0 0 25px #474b4d,0 0 20px #636769,0 0 0.40px #321935;
 
-}
-.news-section{
-    position: relative;
-    height: 150px;
-    width: auto;
-    background-color: #f3f3f3;
-    background: url('images/slide02.jpg') center 20% no-repeat;
-    background-size: cover;
-}
-.schedule-section{
-    position: relative;
-    height: 150px;
-    width: auto;
-    background-color: #f3f3f3;
-    background: url('images/slide03.jpg') center 30% no-repeat;
-    background-size: cover;
-}
-.entry-section{
-    position: relative;
-    height: 150px;
-    width: auto;
-    background-color: #f3f3f3;
-    background: url('images/slide04.jpg') center 30% no-repeat;
-    background-size: cover;
-}
-.license-section{
-    position: relative;
-    height: 150px;
-    width: auto;
-    background-color: #f3f3f3;
-    background: url('images/slide05.jpg') center 30% no-repeat;
-    background-size: cover;
 }
 .common-slogan{
     font-size: 45px;
@@ -482,7 +488,7 @@ a img{
     font-size: 16px;
   }
 
-.android-footer {
+.footer {
   background-color: #fafafa;
   position: relative;
 }
@@ -593,4 +599,15 @@ a img{
   .android-footer .mdl-mega-footer--bottom-section {
     display: none;
   }
+}
+.card-wide.mdl-card {
+    width: 512px;
+}
+.card-wide > .mdl-card__title {
+    color: #fff;
+    height: 176px;
+    background: url('./images/slide01.jpg') center / cover;
+}
+.card-wide > .mdl-card__menu {
+    color: #fff;
 }

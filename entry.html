@@ -23,6 +23,7 @@
             z-index: 900;
         }
     </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 <!-- Add your site or app content here -->
@@ -41,7 +42,7 @@
                     <a class="mdl-navigation__link mdl-typography--text-uppercase" href="news.html">ニュース</a>
                     <a class="mdl-navigation__link mdl-typography--text-uppercase" href="schedule.html">スケジュール</a>
                     <a class="mdl-navigation__link mdl-typography--text-uppercase" href="entry.html">加入したい方はこちら</a>
-                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="member.html">所属中の方はこちら</a>
+                    <!--<a class="mdl-navigation__link mdl-typography--text-uppercase" href="member.html">所属中の方はこちら</a>-->
                 </nav>
             </div>
           <span class="android-mobile-title mdl-layout-title">
@@ -54,32 +55,64 @@
             <a class="mdl-navigation__link" href="news.html">ニュース</a>
             <a class="mdl-navigation__link" href="schedule.html">スケジュール</a>
             <a class="mdl-navigation__link" href="entry.html">加入したい方はこちら</a>
-            <a class="mdl-navigation__link" href="member.html">所属中の方はこちら</a>
+            <!--<a class="mdl-navigation__link" href="member.html">所属中の方はこちら</a>-->
             <div class="android-drawer-separator"></div>
             <a class="mdl-navigation__link" href="license.html">ライセンス</a>
         </nav>
     </div>
     <div class="android-content mdl-layout__content">
-        <a name="top"></a>
-        <div class="entry-section mdl-typography--text-left mdl-">
-            <div class="logo-font common-slogan">加入申請</div>
-            <div class="logo-font common-sub-slogan">サークルに入りたい方へ</div>
+        <dialog class="mdl-dialog">
+            <h4 class="mdl-dialog__title">申請する際の注意事項</h4>
+            <div class="mdl-dialog__content">
+                <p>
+                    参加申請をするにあたって、以下の注意事項をよくお読み頂き、同意する場合のみ申請を受け付けます。
+                </p>
+                <ul class="mdl-list">
+                    <li class="mdl-list__item">1.電気通信大学に在学中の方に限ります。</li>
+                    <li class="mdl-list__item">2.UECeSportsに所属していることがわかる状態での暴言、迷惑行為、チート行為を禁止します。(ゲーム内に限らずTwitterやFacebook等のSNSや掲示板も含まれます。）</li>
+                    <li class="mdl-list__item">3.UECeSports内で知り得た情報を許可無く外部に漏洩させることを禁止します。</li>
+                    <li class="mdl-list__item">4.その他、サークルの所属を不適切だと判断した場合、強制的に除名処分をすることがあります。</li>
+                </ul>
             </div>
-        </div>
-        <footer class="android-footer mdl-mega-footer">
-            <div class="mdl-mega-footer--top-section">
-                <div class="mdl-mega-footer--left-section"></div>
+            <div class="mdl-dialog__actions">
+                <button type="button" class="mdl-button agree">同意する</button>
+                <button type="button" class="mdl-button close">同意しない</button>
             </div>
-
-            <div class="mdl-mega-footer--middle-section">
+        </dialog>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdM_-DnvaiFSbmfdMc36ztJ-9JgPdbBVz8MfV7USvCvKSMv7A/viewform?embedded=true" scrolling="no" width="760" height="1700" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます...</iframe>
+        <footer class="footer mdl-mini-footer">
+            <div class="mdl-mini-footer--left-section">
                 <p class="mdl-typography--font-light">©2017 UECeSports</p>
                 <p class="mdl-typography--font-light">一部の画像、名称は Riot Games に帰属します。</p>
             </div>
-            <div class="mdl-mega-footer--bottom-section">
+            <div class="mdl-mini-footer__right-section">
+                <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button link-sns-logo">
+                    <img src="images/twitter_circle.svg">
+                </button>
+                <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button link-sns-logo">
+                    <img src="images/facebook_circle.svg">
+                </button>
             </div>
         </footer>
     </div>
+</div>
 <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<!--ダイアログ-->
+<script>
+    window.onload = function () {
+        var dialog = document.querySelector('dialog');
+        if (! dialog.showModal) {
+            dialogPolyfill.registerDialog(dialog);
+        }
+        dialog.querySelector('.close').addEventListener('click', function() {
+            location.href="./index.html"
+        });
+        dialog.querySelector('.agree').addEventListener('click', function() {
+            dialog.close();
+        });
+        dialog.showModal();
+    }
+</script>
 </body>
 </html>
 
