@@ -214,10 +214,10 @@ a img{
   height: 150px;
   width: auto;
   background-color: #f3f3f3;
-  background-size: cover;
+  background-size: contain;
 }
 .top-section {
-  background: url('images/slide01.jpg') center 20% no-repeat;
+  background: #000 url('images/slide01.jpg') center 10% no-repeat;
 }
 .news-section{
   background: url('images/slide02.jpg') center 10% no-repeat;
