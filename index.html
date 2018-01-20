@@ -1,242 +1,146 @@
 <!doctype html>
-<!--
-  Material Design Lite
-  Copyright 2015 Google Inc. All rights reserved.
-
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-
-      https://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License
--->
-
-<html lang="en">
-  <head>
+<html class="no-js" lang="">
+<head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Introducing Lollipop, a sweet new take on Android.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>UECeSports -公式ホームページ-</title>
-    <!-- Page styles -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-red.min.css" />
-    <link rel="stylesheet" href="styles.css">
-    <style>
-    #view-source {
-      position: fixed;
-      display: block;
-      right: 0;
-      bottom: 0;
-      margin-right: 40px;
-      margin-bottom: 40px;
-      z-index: 900;
-    }
-    </style>
-  </head>
-  <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
-        <div class="mdl-layout__header-row">
-          <span class="android-title mdl-layout-title">
-            <img class="logo-image" src="images/logo_sub.svg"><span class="title">&nbsp&nbspUECeSports</span>
-          </span>
-          <!-- Add spacer, to align navigation to the right in desktop -->
-          <div class="android-header-spacer mdl-layout-spacer"></div>
-          <!-- Navigation -->
-          <div class="navigation-container">
-            <nav class="navigation mdl-navigation">
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.html">UECeSports</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="news.html">ニュース</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="schedule.html">スケジュール</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="entry.html">加入したい方はこちら</a>
-              <!--<a class="mdl-navigation__link mdl-typography--text-uppercase" href="member.html">所属中の方はこちら</a>-->
-            </nav>
-          </div>
-          <span class="android-mobile-title mdl-layout-title">
-            <img class="logo-image-mobile" src="images/logo_sub.svg"><span class="title">&nbsp&nbspUECeSports</span>
-          </span>
-        </div>
-      </div>
-      <div class="android-drawer mdl-layout__drawer">
-        <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="news.html">ニュース</a>
-          <a class="mdl-navigation__link" href="schedule.html">スケジュール</a>
-          <a class="mdl-navigation__link" href="entry.html">加入したい方はこちら</a>
-          <!--<a class="mdl-navigation__link" href="member.html">所属中の方はこちら</a>-->
-          <div class="android-drawer-separator"></div>
-          <a class="mdl-navigation__link" href="license.html">ライセンス</a>
-        </nav>
-      </div>
-      <div class="android-content mdl-layout__content">
-        <a name="top"></a>
-        <div class="top-section mdl-typography--text-center mdl-">
-          <div class="logo-font top-slogan">ゲームしよう</div>
-          <div class="logo-font top-sub-slogan">楽しく、勝つ。</div>
-          <div class="logo-font top-entry-button">
-            <button class="logo-font button-box mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='entry.html'">加入したい方はこちら</button>
-          </div>
-        </div>
-        <!--<div class="android-screen-section mdl-typography--text-center">
-          <a name="screens"></a>
-          <div class="mdl-typography--display-1-color-contrast">Powering screens of all sizes</div>
-          <div class="android-screens">
-            <div class="android-wear android-screen">
-              <a class="android-image-link" href="">
-                <img class="android-screen-image" src="images/wear-silver-on.png">
-                <img class="android-screen-image" src="images/wear-black-on.png">
-              </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Android Wear</a>
-            </div>
-            <div class="android-phone android-screen">
-              <a class="android-image-link" href="">
-                <img class="android-screen-image" src="images/nexus6-on.jpg">
-              </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Phones</a>
-            </div>
-            <div class="android-tablet android-screen">
-              <a class="android-image-link" href="">
-                <img class="android-screen-image" src="images/nexus9-on.jpg">
-              </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Tablets</a>
-            </div>
-            <div class="android-tv android-screen">
-              <a class="android-image-link" href="">
-                <img class="android-screen-image" src="images/tv-on.jpg">
-              </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Android TV</a>
-            </div>
-            <div class="android-auto android-screen">
-              <a class="android-image-link" href="">
-                <img class="android-screen-image" src="images/auto-on.jpg">
-              </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase mdl-typography--text-left" href="">Coming Soon: Android Auto</a>
-            </div>
-          </div>
-        </div>
-        <div class="android-wear-section">
-          <div class="android-wear-band">
-            <div class="android-wear-band-text">
-              <div class="mdl-typography--display-2 mdl-typography--font-thin">The best of Google built in</div>
-              <p class="mdl-typography--headline mdl-typography--font-thin">
-                Android works perfectly with your favourite apps like Google Maps,
-                Calendar and YouTube.
-              </p>
-              <p>
-                <a class="mdl-typography--font-regular mdl-typography--text-uppercase android-alt-link" href="">
-                  See what's new in the Play Store&nbsp;<i class="material-icons">chevron_right</i>
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="android-customized-section">
-          <div class="android-customized-section-text">
-            <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Customised by you, for you</div>
-            <p class="mdl-typography--font-light">
-              Put the stuff that you care about right on your home screen: the latest news, the weather or a stream of your recent photos.
-              <br>
-              <a href="" class="android-link mdl-typography--font-light">Customise your phone</a>
-            </p>
-          </div>
-          <div class="android-customized-section-image"></div>
-        </div>
-        <div class="android-more-section">
-          <div class="android-section-title mdl-typography--display-1-color-contrast">More from Android</div>
-          <div class="android-card-container mdl-grid">
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/more-from-1.png">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Get going on Android</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Four tips to make your switch to Android quick and easy</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                   Make the switch
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/more-from-4.png">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Create your own Android character</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Turn the little green Android mascot into you, your friends, anyone!</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                   androidify.com
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
 
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/more-from-2.png">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Get a clean customisable home screen</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">A clean, simple, customisable home screen that comes with the power of Google Now: Traffic alerts, weather and much more, just a swipe away.</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                   Download now
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<!--[if lte IE 9]>
+<p class="browserupgrade">あなたは <strong>セキュリティ保障期間切れ</strong> のブラウザーを使用しています。 このホームページをご覧になるには <a
+        href="https://browsehappy.com/">ブラウザーをアップグレード</a> して下さい。（外部サイトにリンクします。）</p>
+<![endif]-->
 
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/more-from-3.png">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Millions to choose from</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Hail a taxi, find a recipe, run through a temple – Google Play has all the apps and games that let you make your Android device uniquely yours.</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                   Find apps
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-          </div>
-        </div>-->
-
-        <footer class="footer mdl-mini-footer">
-          <div class="mdl-mini-footer--left-section">
-              <p class="mdl-typography--font-light">©2017 UECeSports</p>
-              <p class="mdl-typography--font-light">UECeSportsは、ライアットゲームズが公式承認するものではなく、ライアットゲームズ又はリーグ・オブ・レジェンドの製作・管理に正式に関与したいかなる者の見解・意見に基づくものではありません。リーグ・オブ・レジェンド及びライアットゲームズは、Riot Games, Inc.の商標又は登録商標です。リーグ・オブ・レジェンド © Riot Games, Inc.</p>
-          </div>
-          <div class="mdl-mini-footer__right-section">
-              <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button link-sns-logo" onclick="location.href='https://twitter.com/uecesports'">
-                  <img src="images/twitter_circle.svg">
-              </button>
-          </div>
-        </footer>
-      </div>
+<!-- ###############    MAIN CONTENT    ############### -->
+<div class="navigation"></div>
+<div class="content">
+    <div class="welcomeBlock">
+        <div class="welcomeBlock__logo"><img src="img/logo_sub.svg" width="100px"></div>
+        <div class="welcomeBlock__heading">UECeSports</div>
+        <div class="welcomeBlock__caption">楽しく、勝つ。</div>
+        <div class="welcomeBlock__entryBtn">
+            <svg class="welcomeBlock__entryBtn__svg" id="SVG-Circus-c817bf1c-2f4f-7baa-dcc1-7bbe493959a0" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+                <polygon id="actor_2" points="87.06,19.77 44.36,11.47 23.28,49.51 52.94,81.32 92.36,62.94"
+                         opacity="0.50" fill="rgba(171,205,255,1)" fill-opacity="1" stroke="rgba(119,247,144,1)"
+                         stroke-width="0" stroke-opacity="1" stroke-dasharray=""></polygon>
+                <polygon id="actor_1" points="44.00,15.00 4.06,44.02 19.31,90.98 68.69,90.98 83.94,44.02" opacity="0.50"
+                         fill="rgba(160,215,242,1)" fill-opacity="1" stroke="rgba(119,247,144,1)" stroke-width="0"
+                         stroke-opacity="1" stroke-dasharray=""></polygon>
+                <script type="text/ecmascript"><![CDATA[
+                (function () {
+                    var actors = {};
+                    actors.actor_1 = {
+                        node: document.getElementById("SVG-Circus-c817bf1c-2f4f-7baa-dcc1-7bbe493959a0").getElementById("actor_1"),
+                        type: "polygon",
+                        cx: 44,
+                        cy: 57,
+                        dx: 84,
+                        dy: 24,
+                        opacity: 0.50
+                    };
+                    actors.actor_2 = {
+                        node: document.getElementById("SVG-Circus-c817bf1c-2f4f-7baa-dcc1-7bbe493959a0").getElementById("actor_2"),
+                        type: "polygon",
+                        cx: 60,
+                        cy: 45,
+                        dx: 74,
+                        dy: 24,
+                        opacity: 0.50
+                    };
+                    var tricks = {};
+                    tricks.trick_1 = (function (t, a) {
+                        a = (function (n) {
+                            return .5 > n ? 2 * n * n : -1 + (4 - 2 * n) * n
+                        })(a) % 1, a = a * 1 % 1, a = 0 > a ? 1 + a : a;
+                        var M = a * 1 * 360 * Math.PI / 180, i = t._tMatrix, _ = Math.cos(M), c = Math.sin(M),
+                            x = -Math.sin(M), s = Math.cos(M), h = -t.cx * Math.cos(M) + t.cy * Math.sin(M) + t.cx,
+                            n = -t.cx * Math.sin(M) - t.cy * Math.cos(M) + t.cy, r = i[0] * _ + i[2] * c,
+                            o = i[1] * _ + i[3] * c, y = i[0] * x + i[2] * s, f = i[1] * x + i[3] * s,
+                            d = i[0] * h + i[2] * n + i[4], e = i[1] * h + i[3] * n + i[5];
+                        t._tMatrix[0] = r, t._tMatrix[1] = o, t._tMatrix[2] = y, t._tMatrix[3] = f, t._tMatrix[4] = d, t._tMatrix[5] = e
+                    });
+                    tricks.trick_2 = (function (t, a) {
+                        a = (function (n) {
+                            return .5 > n ? 2 * n * n : -1 + (4 - 2 * n) * n
+                        })(a) % 1, a = a * 1 % 1, a = 0 > a ? 1 + a : a;
+                        var M = a * -1 * 360 * Math.PI / 180, i = t._tMatrix, _ = Math.cos(M), c = Math.sin(M),
+                            x = -Math.sin(M), s = Math.cos(M), h = -t.cx * Math.cos(M) + t.cy * Math.sin(M) + t.cx,
+                            n = -t.cx * Math.sin(M) - t.cy * Math.cos(M) + t.cy, r = i[0] * _ + i[2] * c,
+                            o = i[1] * _ + i[3] * c, y = i[0] * x + i[2] * s, f = i[1] * x + i[3] * s,
+                            d = i[0] * h + i[2] * n + i[4], e = i[1] * h + i[3] * n + i[5];
+                        t._tMatrix[0] = r, t._tMatrix[1] = o, t._tMatrix[2] = y, t._tMatrix[3] = f, t._tMatrix[4] = d, t._tMatrix[5] = e
+                    });
+                    var scenarios = {};
+                    scenarios.scenario_1 = {
+                        actors: ["actor_1"],
+                        tricks: [{trick: "trick_1", start: 0, end: 1}],
+                        startAfter: 0,
+                        duration: 20000,
+                        actorDelay: 0,
+                        repeat: 0,
+                        repeatDelay: 0
+                    };
+                    scenarios.scenario_2 = {
+                        actors: ["actor_2"],
+                        tricks: [{trick: "trick_2", start: 0, end: 1}],
+                        startAfter: 0,
+                        duration: 20000,
+                        actorDelay: 0,
+                        repeat: 0,
+                        repeatDelay: 0
+                    };
+                    var _reqAnimFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.oRequestAnimationFrame,
+                        fnTick = function (t) {
+                            var r, a, i, e, n, o, s, c, m, f, d, k, w;
+                            for (c in actors) actors[c]._tMatrix = [1, 0, 0, 1, 0, 0];
+                            for (s in scenarios) for (o = scenarios[s], m = t - o.startAfter, r = 0, a = o.actors.length; a > r; r++) {
+                                if (i = actors[o.actors[r]], i && i.node && i._tMatrix) for (f = 0, m >= 0 && (d = o.duration + o.repeatDelay, o.repeat > 0 && m > d * o.repeat && (f = 1), f += m % d / o.duration), e = 0, n = o.tricks.length; n > e; e++) k = o.tricks[e], w = (f - k.start) * (1 / (k.end - k.start)), tricks[k.trick] && tricks[k.trick](i, Math.max(0, Math.min(1, w)));
+                                m -= o.actorDelay
+                            }
+                            for (c in actors) i = actors[c], i && i.node && i._tMatrix && i.node.setAttribute("transform", "matrix(" + i._tMatrix.join() + ")");
+                            _reqAnimFrame(fnTick)
+                        };
+                    _reqAnimFrame(fnTick);
+                })()
+                ]]></script>
+            </svg>
+            <div class="welcomeBlock__entryBtn__caption">加入する</div>
+        </div>
     </div>
-    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-  </body>
+    <div class="label"><img src="img/label.png" class="label__img"></div>
+    <div id="particles-js"></div>
+    <div class="annie"></div>
+    <div class="annie--char"></div>
+</div>
+<div class="footer"></div>
+
+<!-- ###############  END MAIN CONTENT  ############### -->
+<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/particles.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+    window.ga = function () {
+        ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-112752175-1', 'auto');
+    ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
 </html>
