@@ -1,0 +1,125 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640" width="640" height="640" id="S1lZHf2cJBM">
+    <style>
+        #SyE-SGn9JHf{opacity: 0.47;fill: #92c6ff;fill-opacity: 1;}#SJL-Hfn5krG{opacity: 0.47;fill-opacity: 0;stroke: #000000;stroke-width: 0.1;stroke-opacity: 0;}#SkdZSz351Bf{opacity: 0.47;fill: #92c6ff;fill-opacity: 1;}#S15bSf2cJHf{opacity: 0.47;fill-opacity: 0;stroke: #000000;stroke-width: 1;stroke-opacity: 0;}#HJ3Zrz29yHM{opacity: 0.47;fill: #92c6ff;fill-opacity: 1;}#BkAZHzncyrM{opacity: 0.47;fill-opacity: 0;stroke: #000000;stroke-width: 1;stroke-opacity: 0;}
+
+	@keyframes SyE-SGn9JHfAnimation {
+		0% {
+			transform: rotate(0deg);
+		}
+		33.33% {
+			transform: rotate(2.67deg);
+		}
+		42.22% {
+			transform: rotate(3.38deg);
+		}
+		50% {
+			transform: rotate(3.6deg);
+		}
+		58.89% {
+			transform: rotate(3.29deg);
+		}
+		66.67% {
+			transform: rotate(2.67deg);
+		}
+		100% {
+			transform: rotate(0deg);
+		}
+	}
+
+	#SyE-SGn9JHf {
+		transform-origin: 50% 50% !important;
+		animation: SyE-SGn9JHfAnimation 3s linear;
+	}
+
+
+
+	@keyframes SkdZSz351BfAnimation {
+		0% {
+			transform: rotate(0deg);
+		}
+		33.33% {
+			transform: rotate(-2.67deg);
+		}
+		42.22% {
+			transform: rotate(-3.38deg);
+		}
+		50% {
+			transform: rotate(-3.6deg);
+		}
+		58.89% {
+			transform: rotate(-3.29deg);
+		}
+		66.67% {
+			transform: rotate(-2.67deg);
+		}
+		100% {
+			transform: rotate(0deg);
+		}
+	}
+
+	#SkdZSz351Bf {
+		transform-origin: 50% 50% !important;
+		animation: SkdZSz351BfAnimation 3s linear;
+	}
+
+
+
+	@keyframes HJ3Zrz29yHMAnimation {
+		0% {
+			transform: rotate(0deg);
+		}
+		33.33% {
+			transform: rotate(2.67deg);
+		}
+		42.22% {
+			transform: rotate(3.38deg);
+		}
+		50% {
+			transform: rotate(3.6deg);
+		}
+		58.89% {
+			transform: rotate(3.29deg);
+		}
+		66.67% {
+			transform: rotate(2.67deg);
+		}
+		100% {
+			transform: rotate(0deg);
+		}
+	}
+
+	#HJ3Zrz29yHM {
+		transform-origin: 50% 50% !important;
+		animation: HJ3Zrz29yHMAnimation 3s linear;
+	}
+    </style>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640" width="640" height="640" id="S1lZHf2cJBM">
+        <defs>
+            <path d="M169.64 193.18C239.08 134.37 435.63 93.88 502.01 172.55C564.32 246.38 545.03 397.66 469.37 460.97C389.18 528.08 214.64 570.47 136.99 481.61C68.92 403.72 92.88 258.19 169.64 193.18" id="b12jAyqfWO"/>
+            <path d="M259.74 515.9C562.23 604.45 595.82 307.32 377.4 156.11C121.89 -20.77 -8.82 437.28 259.74 515.9" id="etBuBywXK"/>
+            <path d="M558.57 414.87C521.7 503.06 356.33 551.39 248.24 506.59C150.72 466.19 55.95 322.59 90.24 238.8C127.71 147.24 290.5 102.62 400.58 147.08C513.19 192.56 598.45 319.5 558.57 414.87" id="a3wVQyGsg"/>
+        </defs>
+        <g>
+            <g>
+                <g>
+                    <use xlink:href="#b12jAyqfWO" id="SyE-SGn9JHf"/>
+                    <g>
+                        <use xlink:href="#b12jAyqfWO" id="SJL-Hfn5krG"/>
+                    </g>
+                </g>
+                <g>
+                    <use xlink:href="#etBuBywXK" id="SkdZSz351Bf"/>
+                    <g>
+                        <use xlink:href="#etBuBywXK" id="S15bSf2cJHf"/>
+                    </g>
+                </g>
+                <g>
+                    <use xlink:href="#a3wVQyGsg" id="HJ3Zrz29yHM"/>
+                    <g>
+                        <use xlink:href="#a3wVQyGsg" id="BkAZHzncyrM"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </svg>
+</svg>
